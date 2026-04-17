@@ -4,11 +4,11 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 )
 
 func main() {
-	if num := rand.Intn(3); num == 0 {
+	if num := rand.N(3); num == 0 {
 		fmt.Println("space adventures")
 	} else if num == 1 {
 		fmt.Println("Space X")

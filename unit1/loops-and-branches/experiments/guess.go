@@ -6,14 +6,14 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 )
 
 func main() {
 	var my_num = 78
 
 	for {
-		var rand_num = rand.Intn(100) + 1
+		var rand_num = rand.N(100) + 1
 		if rand_num < my_num {
 			fmt.Printf("%v : Go higher\n", rand_num)
 		} else if rand_num > my_num {

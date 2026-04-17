@@ -5,7 +5,7 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 )
 
 const seconds_per_day = 86400
@@ -19,7 +19,7 @@ func main() {
 	fmt.Println("=================================================")
 
 	for range(10) {
-		switch rand.Intn(3) {
+		switch rand.N(3) {
 		case 0:
 			company = "Space Adventure"
 		case 1:
@@ -28,11 +28,11 @@ func main() {
 			company = "Virgin Galactic"
 		}
 
-		speed := rand.Intn(15) + 16 // km/s
+		speed := rand.N(15) + 16 // km/s
 		duration := distance / speed / seconds_per_day // in days
 		price := 20.0 + speed
 
-		if rand.Intn(2) == 1 {
+		if rand.N(2) == 1 {
 			trip = "Round Trip"
 			price = price * 2
 		} else {

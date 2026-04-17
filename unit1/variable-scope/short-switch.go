@@ -4,11 +4,11 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 )
 
 func main() {
-	switch num := rand.Intn(10); num {
+	switch num := rand.N(10); num {
 	case 0:
 		fmt.Println("space adventures")
 	case 1:

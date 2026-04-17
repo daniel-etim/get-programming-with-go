@@ -3,7 +3,7 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 )
 
 func main() {
@@ -15,7 +15,7 @@ func main() {
 
 		if degrees >= 360 {
 			degrees = 0
-			if rand.Intn(2) == 0 {
+			if rand.N(2) == 0 {
 				break
 			}
 		}

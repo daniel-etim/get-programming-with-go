@@ -8,7 +8,7 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 )
 
 var era = "AD"
@@ -17,8 +17,8 @@ func main() {
 	days := 31
 	
 	for range(10) {
-		year := rand.Intn(4001) + 1000
-		month := rand.Intn(12) + 1
+		year := rand.N(4001) + 1000
+		month := rand.N(12) + 1
 
 		switch month {
 		case 2:
@@ -42,7 +42,7 @@ func main() {
 			days = 30
 		}
 		
-		day := rand.Intn(days) + 1
+		day := rand.N(days) + 1
 		fmt.Printf("era: %-5v year: %-5v month: %-5v day: %-5v \n", era, year, month, day)
 	}
 }

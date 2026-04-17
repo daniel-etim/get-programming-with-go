@@ -4,14 +4,14 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 )
 
 var era = "AD"
 
 func main() {
 	year := 2018
-	month := rand.Intn(12) + 1
+	month := rand.N(12) + 1
 	days := 31
 
 	switch month {
@@ -21,6 +21,6 @@ func main() {
 		days = 30
 	}
 
-	day := rand.Intn(days) + 1
+	day := rand.N(days) + 1
 	fmt.Println(era, year, month, day)
 }

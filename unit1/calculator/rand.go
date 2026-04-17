@@ -3,14 +3,14 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 )
 
 func main() {
-	var num = rand.Intn(10) + 1
+	var num = rand.N(10) + 1
 	fmt.Printf("%v was chosen\n", num)
 
-	num = rand.Intn(10) + 1
+	num = rand.N(10) + 1
 	fmt.Printf("%v was also chosen", num)
 
 }
