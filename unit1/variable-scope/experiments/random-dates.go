@@ -1,4 +1,8 @@
-// Random date refactored
+// Generate a random year instead of always using 2018.
+//  For February, assign daysInMonth to 29 for leap years and 28 for other years.
+// Hint: you can put an if statement inside of a case block.
+// Use a for loop to generate and display 10 random dates.
+
 
 package main
 
