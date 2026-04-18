@@ -11,6 +11,6 @@ func main() {
 	fmt.Printf("%v was chosen\n", num)
 
 	num = rand.N(10) + 1
-	fmt.Printf("%v was also chosen", num)
+	fmt.Printf("%v was also chosen\n", num)
 
 }

@@ -8,11 +8,11 @@ func main() {
 	const lightspeed = 299792 // km/s
 	var (
 		distance = 56000000 // km
-		time = distance / lightspeed
+		time = float64(distance) / float64(lightspeed)
 )
 	fmt.Printf("It takes %vseconds to reach the Mars when distance is %v \n", time, distance)
 
 	distance = 401000000
-	time = distance / lightspeed
-	fmt.Printf("It takes %vseconds to reach the Mars. The distance: %v ", time, distance)
+	time = float64(distance) / float64(lightspeed)
+	fmt.Printf("It takes %vseconds to reach the Mars. The distance: %v \n", time, distance)
 }
