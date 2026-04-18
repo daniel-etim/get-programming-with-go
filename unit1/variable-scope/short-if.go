@@ -9,9 +9,9 @@ import (
 
 func main() {
 	if num := rand.N(3); num == 0 {
-		fmt.Println("space adventures")
+		fmt.Println("Space Adventures")
 	} else if num == 1 {
-		fmt.Println("Space X")
+		fmt.Println("SpaceX")
 	} else {
 		fmt.Print("Virgin Galactic")
 	}
